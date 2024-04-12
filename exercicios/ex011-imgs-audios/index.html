@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+        <!-- A foto g é a imagem padrão. As tags source trazem a mesma imagem em tamanhos diferentes para dispositivos com tamanhos de tela diferentes. O tamanho em questão é baseado na largura. Precisam estar na ordem.-->
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <!-- <audio src="midias/chapstick.mp3" controls autoplay></audio> -->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midias/chapstick.mp3" type="audio/mpeg">
+        <source src="midias/chapstick.wav" type="audio/wav">
+        <source src="midias/chapstick.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não é capaz de reproduzir o áudio. <a href="midias/chapstick.mp3" download="midias/chapstick.mp3" type="audio/mp3">Clique aqui para baixar o arquivo.</a></p>
+        <!-- A primeira maneira de reproduzir um áudio funciona, mas pode falhar, a depender do navegador. Com as tags source o navegador tentará carregar o arquivo seguinte, caso não seja capaz de reproduzir o primeiro, e assim por diante. Obviamente é preciso ter o arquivo nos outros formatos, o que pode ser um problema. Caso o navegador não consiga reproduzir em nenhum dos formatos por não ter suporte a qualquer formato de áudio, a mensagem será exibida, caso contrário, apenas não reproduzirá. -->
+        <!-- O parâmetro preload com valor auto só considera o site carregado após carregar todo o áudio, que geralmente é um arquivo pesado. Isso pode deixar seu site lento. O metadata reproduz o áudio após carregar as informações mínimas, enquanto o none, não carrega nada.  -->
+        <!-- O autoplay não funciona no Chrome, fazendo necessário o controls, para que o áudio seja reproduzido. O loop é auto explicativo. -->
+    </audio>
+</body>
+</html>
