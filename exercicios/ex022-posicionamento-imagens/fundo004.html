@@ -6,18 +6,24 @@
     <title>Imagem de fundo</title>
     <style>
         body {
-            background-color: black;
+            /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-repeat: no-repeat;
             background-position: center center;
-            background-size: cover;
+            background-attachment: fixed; */
             height: 100vh;
-            margin: 0px;
+            
+            /*Shorthand background
+            color > image > position > /size > repeat > attachment
+
+            Background-size não funciona dentro do shorthand. Precisa ser declarado separadamente após o shorthand.*/
+            
+            background: black url('imagens/wallpaper002.jpg') center center /cover no-repeat fixed;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
@@ -28,7 +34,7 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, aperiam architecto dolore ad ratione, sit totam nisi magni cupiditate obcaecati deserunt cum sequi, maiores facere distinctio doloremque possimus omnis iusto?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, aperiam architecto dolore ad ratione, sit totam nisi magni cupiditate obcaecati deserunt cum sequi, maiores facere distinctio doloremque possimus omnis iusto?</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem veritatis veniam officiis error perspiciatis dolor corrupti alias suscipit mollitia explicabo quae, aperiam molestias magnam totam cumque aliquid, tenetur tempora dolore?<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet magnam voluptatibus voluptate blanditiis in suscipit saepe nostrum. Dicta laudantium temporibus vero omnis nisi saepe inventore dolores soluta quae in, asperiores ipsum totam qui possimus, sed sunt culpa amet assumenda delectus nostrum necessitatibus doloremque aliquid cumque. Quibusdam est maxime corrupti nobis nam, quidem doloribus, autem ad alias sed, harum repudiandae sapiente cumque reiciendis repellat porro tempora rerum eum consequuntur nesciunt. A ad repellat obcaecati quisquam delectus impedit laboriosam vero quis deleniti tenetur, laborum pariatur, adipisci ullam ab rem eius fugiat nemo! Sed beatae deserunt rem totam ipsa laboriosam modi eum odit reiciendis facilis voluptatem, quidem fuga excepturi molestiae itaque eaque? Animi quas aliquid deleniti sit iste? Tempore delectus possimus at. Nulla a illum beatae vitae quia obcaecati fugiat, distinctio quae nisi perspiciatis alias pariatur odio iste tenetur minima quasi quam, explicabo eius incidunt! Accusantium, vel labore nostrum recusandae voluptas soluta provident impedit eius omnis itaque perspiciatis dolorem dignissimos possimus hic? Quae laborum doloribus debitis eveniet sed laudantium, ad a nobis perferendis unde accusantium temporibus ipsam ea quidem atque? Facilis quidem sunt adipisci. Ipsum sapiente fuga saepe repudiandae officiis vitae eius, voluptas suscipit commodi porro maxime voluptatem cumque illum aliquid eaque qui perferendis recusandae expedita, error, aut nemo! Cum magnam animi repudiandae dolore? Eius magnam maiores rerum quam incidunt voluptatibus dolor magni architecto placeat expedita perspiciatis adipisci vero molestias optio obcaecati eaque, fugiat ipsa ratione quis dolorem, labore debitis doloremque aliquam. Rerum ratione explicabo voluptates, quasi fugiat dolores fugit repudiandae est at?s</p></p>
     </main>
 </body>
 </html>
