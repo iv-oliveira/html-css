@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alinhamento vertical</title>
+
+        <style>
+            #container {
+                height: 500px;
+                background-color: purple;
+                background-image: url('imagens/target001.png');
+                background-size: 100% 100%;
+                padding: 10px;
+                /* alinhamento vertical */
+                position: relative;
+            }
+
+            /*Modo alternativo (não serve para centralizar itens individualmente)
+            #container {
+                display: flex; - Possui diversas funções, uma delas é habilitar o manejamento do conteúdo.
+                justify-content: center; - Alinhamento horizontal (dispensa o "margin: auto").
+                align-items: center; - Alinhamento vertical.
+            }*/
+
+            #conteudo {
+                height: 200px;
+                width: 400px;
+                background-image: url('imagens/target001.png');
+                background-size: 100% 100%;
+                background-color: yellow;
+                /* alinhamento vertical */
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+        <section id="container">
+            <article id="conteudo">
+
+            </article>
+        </section>
+    </body>
+</html>
