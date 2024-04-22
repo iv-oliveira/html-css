@@ -10,8 +10,8 @@
 }
 
 #centro {
-    height: 500px;
-    width: 500px;
+    height: 80%;
+    width: 38%;
     background-image: url('imagens/astronauta.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
