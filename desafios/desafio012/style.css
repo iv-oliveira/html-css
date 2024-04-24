@@ -1,14 +1,22 @@
+@charset "UTF-8";
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 header {
-    height: 20vw;
-    min-height: 175px;
     background-color: black;
     text-align: center;
     color: white;
+}
+
+header > p {
+    padding-bottom: 50px;
 }
 
 h1 {
@@ -16,6 +24,7 @@ h1 {
     font-weight: 700;
     font-style: normal;
     font-size: 7vw;
+    /* font-variant: small-caps; Letra capitular. Melhor do que essa gambiarra que fiz com os spans. */
     padding-top: 50px;
 }
 
@@ -23,22 +32,21 @@ span {
     font-size: 1.4em;
 }
 
-header > p > a {
+a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-header > p > a:hover {
+a:hover {
     text-decoration: underline;
 }
 
 .estrofes {
     font-family: 'Sriracha', sans-serif;
     font-size: 3.5vw;
-    padding: 0px 30px;
+    padding: 10vh 30px;
     line-height: 2em;
-    margin: 1.5em 0em 2em 0em;
 }
 
 #img01 {
@@ -46,6 +54,7 @@ header > p > a:hover {
     background-size: cover;
     background-position: right center;
     background-attachment: fixed;
+    margin-top: 1em;
 }
 
 #img01 > p {
@@ -54,7 +63,6 @@ header > p > a:hover {
     color: white;
     text-shadow: 1px 1px 0px black;
     padding: 0px 5px;
-    margin: 50px 0px;
 }
 
 #img02 {
@@ -62,7 +70,8 @@ header > p > a:hover {
     background-size: cover;
     background-position: left top;
     background-attachment: fixed;
-    margin-top: 3em;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.493);
+    margin-top: 1em;
 }
 
 #img02 > p {
@@ -71,23 +80,12 @@ header > p > a:hover {
     color: white;
     text-shadow: 1px 1px 0px black;
     padding: 0px 5px;
-    margin: 50px 0px;
 }
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px 0px;
-    margin-top: 20vh;
-}
-
-footer > p > a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer > p > a:hover {
-    text-decoration: underline;
+    padding: 10px;
+    margin-top: 10vh;
 }
