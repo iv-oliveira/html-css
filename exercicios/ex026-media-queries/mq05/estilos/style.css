@@ -21,8 +21,22 @@ h1 {
     text-align: center;
 }
 
-nav {
+#burger {
     display: block;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#burger:hover {
+    background-color: white;
+    color: black;
+}
+
+nav {
+    display: none;
     background-color: rgb(87, 87, 87);
 }
 
